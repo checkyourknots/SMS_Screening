@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_demo_screen.ScreenerSender</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ScreenerSender</name>
+        <script><![CDATA[var ScreenerSender = Class.create();
+ScreenerSender.prototype = {
+	FromNum: '+17177272764', // Get it from some config, not like this
+	
+    initialize: function() {
+    },
+	
+	process: function () {
+		var ids = [];
+		var gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('status', 'queued');
+		gr.query();
+		while (gr.next()) {
+			var id = gr.getUniqueValue();
+			gr.setValue('status', 'sending');
+			if (gr.update()) {
+				ids.push(id);
+			}
+		}
+		gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('sys_id', 'IN', ids.join(','));
+		gr.query();
+		global.NotifySMS().sendToUsers(this.FromNum, gr, "Do you have Covid-19 symptoms today? If you have the symptoms pls respond with N, else with Y.");
+		
+		gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('sys_id', 'IN', ids.join(','));
+		gr.setValue('status', 'sent');
+		gr.updateMultiple();
+	},
+
+    type: 'ScreenerSender'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-10 12:50:14</sys_created_on>
+        <sys_id>3fd9c52bdb4b581072882729139619f8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ScreenerSender</sys_name>
+        <sys_package display_value="Demo Screening" source="x_snc_demo_screen">e5e3c9a3db4b581072882729139619cc</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo Screening">e5e3c9a3db4b581072882729139619cc</sys_scope>
+        <sys_update_name>sys_script_include_3fd9c52bdb4b581072882729139619f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-10 12:58:59</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo Screening">e5e3c9a3db4b581072882729139619cc</application>
+        <file_path/>
+        <instance_id>68b8190ddb43945c601a11f8489619cf</instance_id>
+        <instance_name>swp4demo</instance_name>
+        <name>sys_script_include_3fd9c52bdb4b581072882729139619f8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_demo_screen.ScreenerSender&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;ScreenerSender&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var ScreenerSender = Class.create();
+ScreenerSender.prototype = {
+	FromNum: '+17177272764', // Get it from some config, not like this
+	
+    initialize: function() {
+    },
+	
+	process: function () {
+		var ids = [];
+		var gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('status', 'queued');
+		gr.query();
+		while (gr.next()) {
+			var id = gr.getUniqueValue();
+			gr.setValue('status', 'sending');
+			if (gr.update()) {
+				ids.push(id);
+			}
+		}
+		gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('sys_id', 'IN', ids.join(','));
+		gr.query();
+		global.NotifySMS().sendToUsers(this.FromNum, gr, "Do you have Covid-19 symptoms today? If you have the symptoms pls respond with N, else with Y.");
+		
+		gr = new GlideRecord('x_snc_demo_screen_daily_assessment');
+		gr.addQuery('sys_id', 'IN', ids.join(','));
+		gr.setValue('status', 'sent');
+		gr.updateMultiple();
+	},
+
+    type: 'ScreenerSender'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-10 12:50:14&lt;/sys_created_on&gt;&lt;sys_id&gt;3fd9c52bdb4b581072882729139619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;ScreenerSender&lt;/sys_name&gt;&lt;sys_package display_value="Demo Screening" source="x_snc_demo_screen"&gt;e5e3c9a3db4b581072882729139619cc&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Demo Screening"&gt;e5e3c9a3db4b581072882729139619cc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_3fd9c52bdb4b581072882729139619f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-10 12:58:59&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2012068569</payload_hash>
+        <record_name>ScreenerSender</record_name>
+        <reverted_from/>
+        <source>a9e3c9a3db4b581072882729139619ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-10 12:58:59</sys_created_on>
+        <sys_id>ed5e4d2fdb4b58107288272913961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174781903c10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-10 12:58:59</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>a55e4d2f064b5810dc1f014568a0b824</update_guid>
+        <update_guid_history>a55e4d2f064b5810dc1f014568a0b824:2012068569,513ec92f5d4b58102181912630a7b228:964013963,783d49eb074b5810d00c1d4cf9b69b63:-1882694851,720d09abc64b5810aa175a3132d36265:1238729002,695c05abdc4b58103ddd1fc44f1b388c:1861986857</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-13 19:04:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4f7eeaa374154549bb5273800843e2c9</sys_id>
+        <sys_metadata>3fd9c52bdb4b581072882729139619f8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScreenerSender</sys_name>
+        <sys_package display_value="Demo Screening" source="x_snc_demo_screen">e5e3c9a3db4b581072882729139619cc</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo Screening">e5e3c9a3db4b581072882729139619cc</sys_scope>
+        <sys_scope_delete display_value="">b8813cf40f734c60a60e9c44604d9e21</sys_scope_delete>
+        <sys_update_name>sys_script_include_3fd9c52bdb4b581072882729139619f8</sys_update_name>
+        <sys_update_version display_value="sys_script_include_3fd9c52bdb4b581072882729139619f8">ed5e4d2fdb4b58107288272913961924</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-13 19:04:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

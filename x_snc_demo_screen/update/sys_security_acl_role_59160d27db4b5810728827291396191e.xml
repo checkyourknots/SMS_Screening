@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-10 12:22:55</sys_created_on>
+        <sys_id>59160d27db4b5810728827291396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_demo_screen_daily_assessment.x_snc_demo_screen.user</sys_name>
+        <sys_package display_value="Demo Screening" source="x_snc_demo_screen">e5e3c9a3db4b581072882729139619cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo Screening">e5e3c9a3db4b581072882729139619cc</sys_scope>
+        <sys_security_acl display_value="x_snc_demo_screen_daily_assessment">15160d27db4b5810728827291396191a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_59160d27db4b5810728827291396191e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-10 12:22:55</sys_updated_on>
+        <sys_user_role display_value="x_snc_demo_screen.user" name="x_snc_demo_screen.user">c5f3016fdb0b581072882729139619d1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

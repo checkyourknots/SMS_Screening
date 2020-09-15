@@ -1,0 +1,3424 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"ends":["a7087585db53dc10728827291396193e"],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>e7087585db53dc107288272913961941,6b087585db53dc107288272913961946,67087585db53dc107288272913961942,a3087585db53dc10728827291396193f,23087585db53dc107288272913961951,af087585db53dc107288272913961947,a7087585db53dc10728827291396193d,e7087585db53dc107288272913961944,eb087585db53dc107288272913961940,ef087585db53dc10728827291396194d,af087585db53dc10728827291396193a,a7087585db53dc10728827291396193e</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>e7087585db53dc107288272913961941,6b087585db53dc107288272913961946,67087585db53dc107288272913961942,a7087585db53dc10728827291396193e,a3087585db53dc10728827291396193f,23087585db53dc107288272913961951,e7087585db53dc10728827291396194a,af087585db53dc107288272913961947,a3087585db53dc107288272913961943,a7087585db53dc10728827291396193d,2f087585db53dc107288272913961945,27087585db53dc10728827291396194f,e7087585db53dc107288272913961944,67087585db53dc107288272913961952,eb087585db53dc107288272913961940,eb087585db53dc107288272913961948,ef087585db53dc10728827291396194d,af087585db53dc10728827291396193a,e3087585db53dc10728827291396194c</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Demo Screener - Incoming SMS Processor</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">e7087585db53dc107288272913961941</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:07</sys_created_on>
+        <sys_id>6f08fd45db53dc1072882729139619e0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:55:50</sys_updated_on>
+        <table>notify_message</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Demo Screener - Incoming SMS Processor">b03f896fdb4b581072882729139619e7</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Demo Screener - Incoming SMS Processor</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-10 13:02:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b03f896fdb4b581072882729139619e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Demo Screener - Incoming SMS Processor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo Screening" source="x_snc_demo_screen">e5e3c9a3db4b581072882729139619cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo Screening">e5e3c9a3db4b581072882729139619cc</sys_scope>
+        <sys_update_name>wf_workflow_b03f896fdb4b581072882729139619e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-13 07:29:02</sys_updated_on>
+        <table>notify_message</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e7087585db53dc107288272913961941"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">e7087585db53dc107288272913961941</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>16</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Calculate outcome</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1532</x>
+        <y>563</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=eb087585db53dc107288272913961940"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961940</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var isAllowed;&#13;
+var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+gr.addQuery("question_number", 3);&#13;
+gr.query();&#13;
+if (gr.next()) {&#13;
+	// If response of Q idx 3 exists then it has to be y&#13;
+	if (gr.answer + '' === "y")&#13;
+		isAllowed = true;&#13;
+	else&#13;
+		isAllowed = false;&#13;
+} else&#13;
+	isAllowed = true;&#13;
+&#13;
+if (isAllowed) {&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+	gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+	gr.addQuery("question_number", 4);&#13;
+	gr.query();&#13;
+	if (gr.next()) {&#13;
+		if (gr.answer + '' === "y")&#13;
+			isAllowed = true;&#13;
+		else&#13;
+			isAllowed = false;&#13;
+	} else&#13;
+		isAllowed = false;&#13;
+}&#13;
+&#13;
+workflow.scratchpad.is_allowed = isAllowed? "yes" : "no";&#13;
+&#13;
+gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+if (gr.get(workflow.scratchpad.assessment_id)) {&#13;
+	workflow.scratchpad.user_name = gr.getDisplayValue("user");&#13;
+	gr.status = isAllowed ? "complete_pass" : "complete_fail";&#13;
+	gr.update();&#13;
+} else&#13;
+	workflow.scratchpad.is_allowed = "no";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961940</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var isAllowed;&#13;
+var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+gr.addQuery("question_number", 3);&#13;
+gr.query();&#13;
+if (gr.next()) {&#13;
+	// If response of Q idx 3 exists then it has to be y&#13;
+	if (gr.answer + '' === "y")&#13;
+		isAllowed = true;&#13;
+	else&#13;
+		isAllowed = false;&#13;
+} else&#13;
+	isAllowed = true;&#13;
+&#13;
+if (isAllowed) {&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+	gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+	gr.addQuery("question_number", 4);&#13;
+	gr.query();&#13;
+	if (gr.next()) {&#13;
+		if (gr.answer + '' === "y")&#13;
+			isAllowed = true;&#13;
+		else&#13;
+			isAllowed = false;&#13;
+	} else&#13;
+		isAllowed = false;&#13;
+}&#13;
+&#13;
+workflow.scratchpad.is_allowed = isAllowed? "yes" : "no";&#13;
+&#13;
+gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+if (gr.get(workflow.scratchpad.assessment_id)) {&#13;
+	workflow.scratchpad.user_name = gr.getDisplayValue("user");&#13;
+	gr.status = isAllowed ? "complete_pass" : "complete_fail";&#13;
+	gr.update();&#13;
+} else&#13;
+	workflow.scratchpad.is_allowed = "no";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Calculate outcome">eb087585db53dc107288272913961940</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Dialy Assessment record</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>894</x>
+        <y>326</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=af087585db53dc107288272913961947"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc107288272913961947</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+gr.addQuery('user', workflow.scratchpad.user_id);&#13;
+gr.addQuery('status', 'in_progress');&#13;
+gr.setValue('status', 'incomplete');&#13;
+gr.updateMultiple();&#13;
+&#13;
+gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+gr.initialize();&#13;
+gr.user = workflow.scratchpad.user_id;&#13;
+gr.status = 'in_progress';&#13;
+workflow.scratchpad.assessment_id = gr.insert();&#13;
+&#13;
+workflow.scratchpad.last_q_idx = "-1";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc107288272913961947</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+gr.addQuery('user', workflow.scratchpad.user_id);&#13;
+gr.addQuery('status', 'in_progress');&#13;
+gr.setValue('status', 'incomplete');&#13;
+gr.updateMultiple();&#13;
+&#13;
+gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+gr.initialize();&#13;
+gr.user = workflow.scratchpad.user_id;&#13;
+gr.status = 'in_progress';&#13;
+workflow.scratchpad.assessment_id = gr.insert();&#13;
+&#13;
+workflow.scratchpad.last_q_idx = "-1";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Dialy Assessment record">af087585db53dc107288272913961947</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>44</x>
+        <y>499</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a7087585db53dc10728827291396193e"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Ensure Incoming SMS</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>19</x>
+        <y>191</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=6b087585db53dc107288272913961946"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>direction=inbound^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>direction=inbound^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>6b087585db53dc107288272913961946</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Ensure Incoming SMS">6b087585db53dc107288272913961946</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Ensure Incoming SMS">6b087585db53dc107288272913961946</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Fetch next Q</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396193d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:54:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1307</x>
+        <y>156</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a7087585db53dc10728827291396193d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7087585db53dc10728827291396193d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc10728827291396193d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:54:46</sys_updated_on>
+        <value>var qs = [&#13;
+	"Do you have any of the following symptoms?\n- Congestion/Runny nose\n- Chills (with or without repeated shaking)\n- Recent or current shortness of breath\n- Cough\n- Headache\n- Muscle pain/body aches\n- New loss of taste or smell\n- New onset of gastrointestinal symptomps, nausea, vomiting or diarrhea\n- Sore throat\n- Fatigue\n\nReply Y for yes or N for no",&#13;
+	"Do you currently have a fever or have had one in past 24hrs with a temperature of 100F(37.3°C) or higher?\nReply Y for yes or N for no",&#13;
+	"Have you been currently asked to quarantine due to Covid positive exposure?\nReply Y for yes or N for no",&#13;
+	"Have you been cleared by Employee Health or Human Resource to return to work?\nReply Y for yes or N for no",&#13;
+	"Have you completed and passed the daily temperature scan (less than 100F(37.3°C))?\nReply Y for yes or N for no"&#13;
+];&#13;
+&#13;
+var currentQIdx = parseInt(workflow.scratchpad.last_q_idx) + 1;&#13;
+if (currentQIdx &gt;= qs.length) {&#13;
+	workflow.scratchpad.is_end_of_qs = 'yes';&#13;
+} else {&#13;
+	workflow.scratchpad.is_end_of_qs = 'no';&#13;
+	if (currentQIdx === 3) {&#13;
+		var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+		gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+		gr.addQuery("question_number", "IN", "0,1,2");&#13;
+		gr.addQuery("answer", "y");&#13;
+		gr.query();&#13;
+		if (!gr.next()) {&#13;
+			// There were no yes for any of the previous three questions.&#13;
+			currentQIdx = 4;&#13;
+		}&#13;
+	}&#13;
+	workflow.scratchpad.next_q = qs[currentQIdx];&#13;
+	workflow.scratchpad.reply_to_no = current.getDisplayValue('notify_number');&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+	gr.initialize();&#13;
+	gr.setValue("parent", workflow.scratchpad.assessment_id);&#13;
+	gr.setValue("question_number", currentQIdx);&#13;
+	gr.insert();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7087585db53dc10728827291396193d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc10728827291396193d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:54:46</sys_updated_on>
+        <value>var qs = [&#13;
+	"Do you have any of the following symptoms?\n- Congestion/Runny nose\n- Chills (with or without repeated shaking)\n- Recent or current shortness of breath\n- Cough\n- Headache\n- Muscle pain/body aches\n- New loss of taste or smell\n- New onset of gastrointestinal symptomps, nausea, vomiting or diarrhea\n- Sore throat\n- Fatigue\n\nReply Y for yes or N for no",&#13;
+	"Do you currently have a fever or have had one in past 24hrs with a temperature of 100F(37.3°C) or higher?\nReply Y for yes or N for no",&#13;
+	"Have you been currently asked to quarantine due to Covid positive exposure?\nReply Y for yes or N for no",&#13;
+	"Have you been cleared by Employee Health or Human Resource to return to work?\nReply Y for yes or N for no",&#13;
+	"Have you completed and passed the daily temperature scan (less than 100F(37.3°C))?\nReply Y for yes or N for no"&#13;
+];&#13;
+&#13;
+var currentQIdx = parseInt(workflow.scratchpad.last_q_idx) + 1;&#13;
+if (currentQIdx &gt;= qs.length) {&#13;
+	workflow.scratchpad.is_end_of_qs = 'yes';&#13;
+} else {&#13;
+	workflow.scratchpad.is_end_of_qs = 'no';&#13;
+	if (currentQIdx === 3) {&#13;
+		var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+		gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+		gr.addQuery("question_number", "IN", "0,1,2");&#13;
+		gr.addQuery("answer", "y");&#13;
+		gr.query();&#13;
+		if (!gr.next()) {&#13;
+			// There were no yes for any of the previous three questions.&#13;
+			currentQIdx = 4;&#13;
+		}&#13;
+	}&#13;
+	workflow.scratchpad.next_q = qs[currentQIdx];&#13;
+	workflow.scratchpad.reply_to_no = current.getDisplayValue('notify_number');&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+	gr.initialize();&#13;
+	gr.setValue("parent", workflow.scratchpad.assessment_id);&#13;
+	gr.setValue("question_number", currentQIdx);&#13;
+	gr.insert();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Fetch next Q">a7087585db53dc10728827291396193d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc10728827291396193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Has Daily Assessment record</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>679</x>
+        <y>46</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a3087585db53dc107288272913961943"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = 'no';&#13;
+var gr = new GlideRecord('x_snc_demo_screen_daily_assessment');&#13;
+gr.addQuery("user", workflow.scratchpad.user_id);&#13;
+gr.addQuery("status", "in_progress");&#13;
+gr.query();&#13;
+if (gr.next()) {&#13;
+	workflow.scratchpad.assessment_id = gr.getUniqueValue();&#13;
+	answer = 'yes';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc107288272913961943</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = 'no';&#13;
+var gr = new GlideRecord('x_snc_demo_screen_daily_assessment');&#13;
+gr.addQuery("user", workflow.scratchpad.user_id);&#13;
+gr.addQuery("status", "in_progress");&#13;
+gr.query();&#13;
+if (gr.next()) {&#13;
+	workflow.scratchpad.assessment_id = gr.getUniqueValue();&#13;
+	answer = 'yes';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Has Daily Assessment record">a3087585db53dc107288272913961943</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Has Daily Assessment record">a3087585db53dc107288272913961943</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>17</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Is allowed?</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1332</x>
+        <y>643</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ef087585db53dc10728827291396194d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_allowed;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ef087585db53dc10728827291396194d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_allowed;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is allowed?">ef087585db53dc10728827291396194d</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is allowed?">ef087585db53dc10728827291396194d</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc10728827291396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Is end of all Qs?</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1122</x>
+        <y>274</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e7087585db53dc107288272913961944"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_end_of_qs;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc107288272913961944</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc107288272913961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_end_of_qs;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is end of all Qs?">e7087585db53dc107288272913961944</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is end of all Qs?">e7087585db53dc107288272913961944</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Is start keyword</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>463</x>
+        <y>293</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=23087585db53dc107288272913961951"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>function isStartKeyword() {&#13;
+	return workflow.scratchpad.msg_body.indexOf('screen') === 0;&#13;
+}&#13;
+answer = isStartKeyword() ? 'yes' : 'no';&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>23087585db53dc107288272913961951</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>function isStartKeyword() {&#13;
+	return workflow.scratchpad.msg_body.indexOf('screen') === 0;&#13;
+}&#13;
+answer = isStartKeyword() ? 'yes' : 'no';&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is start keyword">23087585db53dc107288272913961951</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is start keyword">23087585db53dc107288272913961951</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Is user known</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>412</x>
+        <y>108</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a3087585db53dc10728827291396193f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>function isUserKnown() {&#13;
+	var ph = current.phone_number + '';&#13;
+	if (ph) {&#13;
+		//Lookup user using ph&#13;
+		var userId = new global.NotifyUtil().getUserByNumber(ph);&#13;
+		if (userId) {&#13;
+			workflow.scratchpad.user_id = userId;&#13;
+			return 'yes';&#13;
+		}&#13;
+	}&#13;
+	return 'no';&#13;
+}&#13;
+answer = isUserKnown();</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a3087585db53dc10728827291396193f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>function isUserKnown() {&#13;
+	var ph = current.phone_number + '';&#13;
+	if (ph) {&#13;
+		//Lookup user using ph&#13;
+		var userId = new global.NotifyUtil().getUserByNumber(ph);&#13;
+		if (userId) {&#13;
+			workflow.scratchpad.user_id = userId;&#13;
+			return 'yes';&#13;
+		}&#13;
+	}&#13;
+	return 'no';&#13;
+}&#13;
+answer = isUserKnown();</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is user known">a3087585db53dc10728827291396193f</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is user known">a3087585db53dc10728827291396193f</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc107288272913961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Is valid response?</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1099</x>
+        <y>23</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=67087585db53dc107288272913961952"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_valid_response;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961952</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>answer = workflow.scratchpad.is_valid_response;&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is valid response?">67087585db53dc107288272913961952</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Is valid response?">67087585db53dc107288272913961952</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Parse message body</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>219</x>
+        <y>52</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=67087585db53dc107288272913961942"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961942</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var body = current.getValue('body');&#13;
+if (body)&#13;
+	body = (body + '').trim().toLowerCase();&#13;
+else&#13;
+	body = '';&#13;
+workflow.scratchpad.msg_body = body;&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>67087585db53dc107288272913961942</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var body = current.getValue('body');&#13;
+if (body)&#13;
+	body = (body + '').trim().toLowerCase();&#13;
+else&#13;
+	body = '';&#13;
+workflow.scratchpad.msg_body = body;&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Parse message body">67087585db53dc107288272913961942</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Record response</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>896</x>
+        <y>31</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2f087585db53dc107288272913961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2f087585db53dc107288272913961945</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+gr.addNullQuery("answer");&#13;
+gr.query();gs.warn('.........workflow.scratchpad.msg_body '+workflow.scratchpad.msg_body)&#13;
+workflow.scratchpad.is_valid_response = 'no';&#13;
+if (gr.next()) {&#13;
+	if (workflow.scratchpad.msg_body === 'y' || workflow.scratchpad.msg_body === 'n') {&#13;
+		workflow.scratchpad.is_valid_response = 'yes';&#13;
+		workflow.scratchpad.last_q_idx = gr.question_number + '';&#13;
+		gr.answer = workflow.scratchpad.msg_body;&#13;
+		gr.update();&#13;
+	}&#13;
+} else {&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+	if (gr.get(workflow.scratchpad.assessment_id)) {&#13;
+		gr.status = "incomplete";&#13;
+		gr.update();&#13;
+	}&#13;
+}gs.warn('.............workflow.scratchpad.is_valid_response '+workflow.scratchpad.is_valid_response)</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2f087585db53dc107288272913961945</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>var gr = new GlideRecord("x_snc_demo_screen_daily_assessment_response");&#13;
+gr.addQuery("parent", workflow.scratchpad.assessment_id);&#13;
+gr.addNullQuery("answer");&#13;
+gr.query();gs.warn('.........workflow.scratchpad.msg_body '+workflow.scratchpad.msg_body)&#13;
+workflow.scratchpad.is_valid_response = 'no';&#13;
+if (gr.next()) {&#13;
+	if (workflow.scratchpad.msg_body === 'y' || workflow.scratchpad.msg_body === 'n') {&#13;
+		workflow.scratchpad.is_valid_response = 'yes';&#13;
+		workflow.scratchpad.last_q_idx = gr.question_number + '';&#13;
+		gr.answer = workflow.scratchpad.msg_body;&#13;
+		gr.update();&#13;
+	}&#13;
+} else {&#13;
+	gr = new GlideRecord("x_snc_demo_screen_daily_assessment");&#13;
+	if (gr.get(workflow.scratchpad.assessment_id)) {&#13;
+		gr.status = "incomplete";&#13;
+		gr.update();&#13;
+	}&#13;
+}gs.warn('.............workflow.scratchpad.is_valid_response '+workflow.scratchpad.is_valid_response)</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Record response">2f087585db53dc107288272913961945</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Send SMS">8a243940eb333100fd7b4eff2206fecc</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send: Contact HR</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>589</x>
+        <y>801</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e7087585db53dc10728827291396194a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>This number is not registered with us. Please contact your HR.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>This number is not registered with us. Please contact your HR.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e7087585db53dc10728827291396194a</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send: Contact HR">e7087585db53dc10728827291396194a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Send SMS">8a243940eb333100fd7b4eff2206fecc</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>14</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send: Next Q</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:55:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1354</x>
+        <y>443</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=eb087585db53dc107288272913961948"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:55:34</sys_updated_on>
+        <value>${next_q}&#13;
+(Send reply only to ${reply_to_no})</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:55:34</sys_updated_on>
+        <value>${next_q}&#13;
+(Send reply only to ${reply_to_no})</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>eb087585db53dc107288272913961948</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send: Next Q">eb087585db53dc107288272913961948</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc10728827291396194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Send SMS">8a243940eb333100fd7b4eff2206fecc</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send: Stay at home</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>1548</x>
+        <y>763</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e3087585db53dc10728827291396194c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>${user_name}, sorry you cannot enter the premise for safety reasons. Follow the guidance at your location.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>${user_name}, sorry you cannot enter the premise for safety reasons. Follow the guidance at your location.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e3087585db53dc10728827291396194c</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc10728827291396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send: Stay at home">e3087585db53dc10728827291396194c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc10728827291396194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Send SMS">8a243940eb333100fd7b4eff2206fecc</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send: Welcome OTP</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:07</sys_created_on>
+        <sys_id>af087585db53dc10728827291396193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>990</x>
+        <y>834</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=af087585db53dc10728827291396193a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:07</sys_created_on>
+        <sys_id>27087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:07</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>${user_name} you are authorised to enter. Welcome. Your entry OTP is 1234 and will be valid for next 12hrs.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:07</sys_created_on>
+        <sys_id>27087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:07</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>${user_name} you are authorised to enter. Welcome. Your entry OTP is 1234 and will be valid for next 12hrs.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>af087585db53dc10728827291396193a</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc10728827291396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send: Welcome OTP">af087585db53dc10728827291396193a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc10728827291396193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Send SMS">8a243940eb333100fd7b4eff2206fecc</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>13</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Send: Wrong response feedback</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+        <x>68</x>
+        <y>811</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=27087585db53dc10728827291396194f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>We received an unexpected response.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">93e8ba68eb333100fd7b4eff2206fec8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">718972a7eb100200fd7b4eff2206fe8d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">36e03614eb333100fd7b4eff2206fe94</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a3087585db53dc107288272913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value/>
+        <variable display_value="">37a37e14eb333100fd7b4eff2206fea2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>67087585db53dc107288272913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>We received an unexpected response.</value>
+        <variable display_value="">bad6b254eb333100fd7b4eff2206fe98</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>27087585db53dc10728827291396194f</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc10728827291396194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <value>result = getRecipientsAndNumberToSendFrom();&#13;
+&#13;
+function getRecipientsAndNumberToSendFrom() {&#13;
+    return {&#13;
+        notify_number   : getNotifyNumber(),    // the sys_id of the notify number&#13;
+        users           : [],                   // array of user ids&#13;
+        groups          : [],                   // array of group ids&#13;
+        numbers         : [current.phone_number + '']                    // array of E.164 compliant phone numbers&#13;
+    };&#13;
+}&#13;
+&#13;
+function getNotifyNumber() {&#13;
+    return gs.getProperty('x_snc_demo_screen.from_number');&#13;
+}</value>
+        <variable display_value="">d31fc993eb100200fd7b4eff2206fe8c</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Send: Wrong response feedback">27087585db53dc10728827291396194f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">af087585db53dc107288272913961941</condition>
+        <from display_value="Begin">e7087585db53dc107288272913961941</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Ensure Incoming SMS">6b087585db53dc107288272913961946</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">63087585db53dc107288272913961941</condition>
+        <from display_value="Calculate outcome">eb087585db53dc107288272913961940</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>23087585db53dc107288272913961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Is allowed?">ef087585db53dc10728827291396194d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2f087585db53dc10728827291396194b</condition>
+        <from display_value="Send: Contact HR">e7087585db53dc10728827291396194a</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>27087585db53dc107288272913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">67087585db53dc107288272913961947</condition>
+        <from display_value="Ensure Incoming SMS">6b087585db53dc107288272913961946</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc107288272913961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">23087585db53dc107288272913961944</condition>
+        <from display_value="Has Daily Assessment record">a3087585db53dc107288272913961943</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2b087585db53dc107288272913961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Wrong response feedback">27087585db53dc10728827291396194f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">27087585db53dc107288272913961948</condition>
+        <from display_value="Create Dialy Assessment record">af087585db53dc107288272913961947</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Fetch next Q">a7087585db53dc10728827291396193d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">e3087585db53dc107288272913961945</condition>
+        <from display_value="Is end of all Qs?">e7087585db53dc107288272913961944</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>2f087585db53dc107288272913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Calculate outcome">eb087585db53dc107288272913961940</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">eb087585db53dc10728827291396194e</condition>
+        <from display_value="Is allowed?">ef087585db53dc10728827291396194d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Stay at home">e3087585db53dc10728827291396194c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">63087585db53dc107288272913961953</condition>
+        <from display_value="Is valid response?">67087585db53dc107288272913961952</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>63087585db53dc107288272913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Fetch next Q">a7087585db53dc10728827291396193d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">a3087585db53dc107288272913961940</condition>
+        <from display_value="Is user known">a3087585db53dc10728827291396193f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Contact HR">e7087585db53dc10728827291396194a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a3087585db53dc107288272913961946</condition>
+        <from display_value="Record response">2f087585db53dc107288272913961945</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6b087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Is valid response?">67087585db53dc107288272913961952</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">af087585db53dc107288272913961951</condition>
+        <from display_value="Is start keyword">23087585db53dc107288272913961951</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>6f087585db53dc107288272913961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Has Daily Assessment record">a3087585db53dc107288272913961943</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">e7087585db53dc107288272913961947</condition>
+        <from display_value="Ensure Incoming SMS">6b087585db53dc107288272913961946</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Parse message body">67087585db53dc107288272913961942</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">6b087585db53dc107288272913961950</condition>
+        <from display_value="Send: Wrong response feedback">27087585db53dc10728827291396194f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">23087585db53dc10728827291396193e</condition>
+        <from display_value="Fetch next Q">a7087585db53dc10728827291396193d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Is end of all Qs?">e7087585db53dc107288272913961944</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">af087585db53dc107288272913961943</condition>
+        <from display_value="Has Daily Assessment record">a3087585db53dc107288272913961943</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>a7087585db53dc107288272913961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Record response">2f087585db53dc107288272913961945</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">67087585db53dc107288272913961945</condition>
+        <from display_value="Is end of all Qs?">e7087585db53dc107288272913961944</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ab087585db53dc107288272913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Next Q">eb087585db53dc107288272913961948</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">23087585db53dc10728827291396194a</condition>
+        <from display_value="Send: Next Q">eb087585db53dc107288272913961948</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>af087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">eb087585db53dc107288272913961942</condition>
+        <from display_value="Parse message body">67087585db53dc107288272913961942</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Is user known">a3087585db53dc10728827291396193f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">6f087585db53dc10728827291396194e</condition>
+        <from display_value="Is allowed?">ef087585db53dc10728827291396194d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Welcome OTP">af087585db53dc10728827291396193a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">6f087585db53dc10728827291396193c</condition>
+        <from display_value="Send: Welcome OTP">af087585db53dc10728827291396193a</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e3087585db53dc107288272913961958</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2b087585db53dc10728827291396194d</condition>
+        <from display_value="Send: Stay at home">e3087585db53dc10728827291396194c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>e7087585db53dc107288272913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="End">a7087585db53dc10728827291396193e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">2f087585db53dc107288272913961951</condition>
+        <from display_value="Is start keyword">23087585db53dc107288272913961951</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Create Dialy Assessment record">af087585db53dc107288272913961947</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">27087585db53dc107288272913961940</condition>
+        <from display_value="Is user known">a3087585db53dc10728827291396193f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>eb087585db53dc107288272913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Is start keyword">23087585db53dc107288272913961951</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">e3087585db53dc107288272913961953</condition>
+        <from display_value="Is valid response?">67087585db53dc107288272913961952</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:08</sys_created_on>
+        <sys_id>ef087585db53dc107288272913961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:08</sys_updated_on>
+        <to display_value="Send: Wrong response feedback">27087585db53dc10728827291396194f</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-15 07:52:07</sys_created_on>
+        <sys_id>2308fd45db53dc1072882729139619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-15 07:52:07</sys_updated_on>
+        <workflow_version display_value="Demo Screener - Incoming SMS Processor">6f08fd45db53dc1072882729139619e0</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=b03f896fdb4b581072882729139619e7^sys_id!=6f08fd45db53dc1072882729139619e0">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
