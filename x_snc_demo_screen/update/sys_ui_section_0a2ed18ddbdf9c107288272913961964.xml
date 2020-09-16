@@ -1,102 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="0a2ed18ddbdf9c107288272913961964" sys_domain="global" table="x_snc_demo_screen_daily_assessment" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>062ed18ddbdf9c10728827291396196b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>522e558ddbdf9c10728827291396191f</sys_id>
+            <position>0</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2020-09-16 17:44:49</sys_created_on>
+            <sys_id>d34945e1db579050c53cd8fdd3961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2020-09-16 17:44:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>response</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>d22e558ddbdf9c10728827291396191f</sys_id>
+            <element>sys_updated_on</element>
+            <position>1</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2020-09-16 17:44:49</sys_created_on>
+            <sys_id>9b4945e1db579050c53cd8fdd3961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2020-09-16 17:44:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>562e558ddbdf9c10728827291396191f</sys_id>
+            <position>2</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2020-09-16 17:44:49</sys_created_on>
+            <sys_id>1f4945e1db579050c53cd8fdd3961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2020-09-16 17:44:49</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>user</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>d62e558ddbdf9c10728827291396191f</sys_id>
+            <position>3</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2020-09-16 17:44:49</sys_created_on>
+            <sys_id>9f4945e1db579050c53cd8fdd3961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2020-09-16 17:44:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>5a2e558ddbdf9c10728827291396191f</sys_id>
+            <position>4</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2020-09-16 17:44:49</sys_created_on>
+            <sys_id>134945e1db579050c53cd8fdd396193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2020-09-16 17:44:49</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-09-15 05:58:59</sys_created_on>
-            <sys_id>da2e558ddbdf9c10728827291396191f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_demo_screen_daily_assessment" sys_domain="global" view="Default view">0a2ed18ddbdf9c107288272913961964</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-09-15 05:58:59</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
